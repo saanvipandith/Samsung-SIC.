@@ -1,1 +1,12 @@
-
+def bubble_sort(sorting_list):
+  for i in range(0,n-2,1):
+    for j in range(0,n-2-i,1):
+        l[j],l[j+1] = l[j+1],l[j]
+        return 1
+print(sorting_list)
+size = int(input("Enter the size of the list: "))
+l = []
+for i in range(size):
+  elements = int(input("Enter the elements: "))
+  l.append(elements)
+bubble_sort(l)
