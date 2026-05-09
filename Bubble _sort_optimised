@@ -1,0 +1,15 @@
+def bubble_sort(sorting_list):
+  for i in range(0,len(l)-1,1):
+    sorted = True
+    for j in range(0,len(l)-1-i,1):
+        l[j],l[j+1] = l[j+1],l[j]
+        sorted = False
+        print(l)
+    if sorted:
+       break
+size = int(input("Enter the size of the list: "))
+l = []
+for i in range(size):
+  elements = int(input("Enter the elements: "))
+  l.append(elements)
+bubble_sort(l)
