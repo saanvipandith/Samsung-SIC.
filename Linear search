@@ -1,0 +1,11 @@
+size = int(input("Enter the size of the list: "))
+l = []
+for i in range(size):
+    number = int(input("Enter the elements of the list: "))
+    l.append(number)
+search_number = int(input("Enter the search element in the list: "))
+for i in l:
+    if i == search_number:
+        print("Element found in index: ",l.index(i))
+    else:
+        print("Number does not exist in list.")
