@@ -1,0 +1,12 @@
+def insertion_sort(l):
+    for i in range(0,len(unsorted_list)-1,1):
+        if unsorted_list[i] < unsorted_list[i+1]:
+            inserting_list.append(unsorted_list[i])
+            print(inserting_list)
+size = int(input("Enter the size of the array: "))
+unsorted_list = []
+for i in range(size):
+    elements = int(input("Enter the elements: "))
+    unsorted_list.append(elements)
+inserting_list = []
+insertion_sort(inserting_list)
