@@ -1,0 +1,18 @@
+n = int(input("Enter the number of coins harry has: "))
+monk = []
+l = []
+k = 0
+m = -1
+for i in range(n):
+    worth = int(input("Enter the worth of each coin: "))
+    l.append(worth)
+inst = input("Enter the instruction(enter -1 to stop): ")
+while(inst != "-1"):
+    if inst == "Harry":
+        monk.append(l[k])
+        k = k + 1
+    else:
+        monk.pop()
+    inst = input("Enter the instruction(enter -1 to stop): ")
+print(len(monk))
+
