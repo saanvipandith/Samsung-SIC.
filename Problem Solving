@@ -1,0 +1,21 @@
+l = []
+l1 = []
+k = 0
+s = 0
+n = int(input("Enter the number of shoes: "))
+l3 = []
+for i in range(n):
+    price = int(input("Enter the prices: "))
+    l.append(price)
+n1 = int(input("Enter the number of negative shoes: "))
+for i in l:
+    if i < 0:
+        i = i*(-1)
+        l1.append(i)
+while(k < n1):
+    m = max(l1)
+    s = s + m 
+    q = l1.index(m)
+    l1.pop(q)
+    k = k + 1
+print(s)
